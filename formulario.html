@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <meta charset="utf-8" />
+    <title>Contacto</title>
+
+    <!--HOJA DE ESTILOS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="center">
+            <!-- LOGO -->
+            <div id="logo">
+                <img src="assets/images/logo.svg" class="app-logo" alt="Logotipo" />
+                <span id="brand">
+                        <strong>CV</strong>Crapa
+                    </span>
+            </div>
+
+            <!-- MENU -->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Sobre Mi.html">Sobre Mi</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--LIMPIAR FLOTADOS-->
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <div class="center">
+        <section id="content">
+
+            <h1 class="subheader">Contactame</h1>
+
+            <body class="contactBody">
+
+                <form action="enviar.php" method="post" class="form_contact">
+                    <input type="text" class="name entry " name="nombre" placeholder="Nombre y Apellido" required/>
+
+                    <input type="text" class="email entry" name="correo" placeholder="E-mail" required/>
+
+                    <textarea class="message entry" name="mensaje" placeholder="Escribe un mensaje" required></textarea>
+
+                    <button class="submit entry" onclick="Gracias()">Enviar</button>
+                </form>
+                <div class="shadow"></div>
+        </section>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="center">
+            <p>
+                &copy; Programacion Web PHP - PoloTic Misiones
+            </p>
+        </div>
+    </footer>
+    </body>
+
+</html>
